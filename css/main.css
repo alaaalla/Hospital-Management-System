@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cormorant Garamond", serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    box-sizing: border-box;
+    transition: all linear .2s;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header-active {
+    top: 0;
+    width: 100%;
+    box-shadow: 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+
+.clear-fix {
+    clear: both;
+}
+
+:root {
+    --blue: #0188df;
+    --black: #444d53;
+    --white: #fff;
+}
+
+html {
+    font-size: 75%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    background: var(--white);
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    z-index: 1000;
+    margin: 0%;
+}
+
+header a {
+    color: var(--black);
+}
+
+header a:hover {
+    color: var(--blue);
+}
+
+header .logo {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .logo span {
+    color: var(--blue);
+}
+
+/* N A V B A R    S T Y L E */
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .navbar ul li {
+    margin: 0 1rem;
+}
+
+header .navbar ul li a {
+    font-size: 2rem;
+    color: var(--black);
+    text-decoration: none;
+}
+
+header .navbar ul li a:hover {
+    color: var(--blue);
+}
+
+header .fa-bars {
+    font-size: 2.5rem;
+    color: var(--blue);
+    cursor: pointer;
+    display: none;
+}
+
+header .fa-times {
+    transform: rotate(180deg);
+}
+
+.home{
+    min-height:100vh;
+    padding:10rem 0 4rem;
+    background-image:url(../imgs/8mwghf8p.png);
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+}
+
+.home .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.home .content h1 {
+    font-size: 3.5rem;
+    color: var(--black);
+}
+
+.home .content h1 span {
+    color: var(--blue)
+}
+
+.home .content p {
+    font-size: 1.8rem;
+    color: var(--black);
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+.title h1::before {
+    content: "";
+    margin: auto;
+    border-color: var(--blue);
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0px;
+    width: 70px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.title h1::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    margin: auto;
+    background-color: var(--blue);
+    bottom: 4px;
+    height: 1px;
+    width: 150px;
+}
+
+/* A P P O I N T M E NT     S T Y L E */
+.Appointment {
+    background-image: url(../imgs/hospital-information-management-system.webp);
+    background-size: cover;
+    margin: auto;
+    background-position: center center;
+
+}
+
+.Appointment .inner {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 25px;
+    padding: 50px 15px;
+}
+
+
+/* B L O G      S T Y L E */
+.Blog {
+    background-color: #F1F1F1;
+    padding: 60px 0;
+}
+
+.Blog h1 {
+    padding: 20px 0;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    font-size: 34px;
+    width: 230px;
+}
+
+.Blog .container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+}
+
+.posts{
+    flex:1 1 320px;
+    max-width:350px; 
+    background-color: white;
+    margin: 5px 15px;
+}
+   
+
+
+.posts img {
+    width: 100%;
+}
+
+
+.posts p,
+.posts h3,
+h4 {
+    padding: 12px 25px;
+}
+
+.posts h2 {
+    text-align: center;
+}
+
+.posts h3:hover,
+h4:hover {
+    color: var(--blue);
+    transition: 1s;
+}
+
+/* C O N T A C T   S T Y L E */
+.contact {
+    margin: auto;
+    padding: 70px 0;
+}
+
+.contact h1 {
+    padding: 20px 0;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    font-size: 34px;
+    width: 230px;
+}
+
+.user input,
+textarea,
+button {
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.user .name {
+    padding: 12px 12px;
+    margin: 15px 0;
+    float: left;
+}
+
+.user .email {
+    padding: 12px 12px;
+    float: right;
+    margin: 15px 0;
+}
+
+.subject {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 15px 0;
+}
+
+textarea {
+    resize: both;
+    width: 100%;
+    padding: 22px 12px;
+    margin: 15px 0;
+}
+
+.user button {
+    background-color: var(--blue);
+    color: white;
+    padding: 12px 12px;
+    border: 0;
+    margin: 10px 0;
+}
+
+/* F O O T E R     S T Y L E */
+footer {
+    padding: 20px 0;
+    background-color: var(--white);
+}
+
+footer .icons {
+    text-align: center;
+    color: var(--black);
+    font-size: medium;
+}
+
+footer .icons i {
+    padding: 0 10px;
+}
+
+.icons i:hover {
+    color: var(--blue);
+    transition: 0.5s;
+}
+
+footer a {
+    color: var(--black);
+    text-decoration: none;
+}

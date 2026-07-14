@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Hospital System</title>
+  <link rel="icon" type="image/x-icon" href="./imgs/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/media_query.css">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo"><span>H</span>ospital <span>S</span>ystem.</a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Appointment">Appointment</a></li>
+        <li><a href="#Blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="fas fa-bars"></div>
+  </header>
+  <!-- S T A R T    H O M E -->
+  <section class="home" id="home">
+    <div class="inner">
+      <div class="home-content">
+        <img src="./imgs/functional-requirements-of-hospital-management-system-2.webp" alt="" srcset="">
+      </div>
+      <div class="content">
+        <h1><span>Stay</span>Safe, <span>Stay</span> Healthy</h1>
+        <p>Welcome to our Hospital Management System, a digital platform designed to enhance patient care, and improve
+          overall hospital efficiency.
+          With a focus on accuracy and reliability, we aim to support healthcare providers in delivering high-quality,
+          patient-centered services.</p>
+      </div>
+    </div>
+  </section>
+  <!-- E N D    H O M E -->
+  <!-- S T A R T   A P P O I N T M E N T -->
+  <section class="Appointment" id="Appointment">
+    <div class="inner">
+      <div class="container py-5">
+        <h1 class="text-white">Hospital Patient System</h1>
+        <div class="form-group my-2">
+          <label class="text-white" for="Patient">PatientName</label>
+          <input oninput="validateName()" type="text" name="" id="PatientName" class="form-control"
+            placeholder="Enter Patient Name">
+          <p id="invalidName" class="text-danger d-none">Please enter a valid name with a first capitale character</p>
+        </div>
+
+        <div class="form-group my-2">
+          <label class="text-white" for="Patient">DoctorID</label>
+          <input oninput="validateID()" type="number" name="" id="DoctorID" class="form-control"
+            placeholder="Enrer Doctor ID">
+          <p id="invalidNumber" class="text-danger d-none">Please enter a valid number </p>
+        </div>
+        <div class="form-group my-2">
+          <label class="text-white" for="Patient">PatientStatus</label>
+          <input oninput="validateStatus()" type="text" name="" id="PatientStatus" class="form-control"
+            placeholder="Enter Patient Status" required>
+          <p id="invalidStatus" class="text-danger d-none">Please enter a valid name with a first capitale character
+          </p>
+        </div>
+
+        <div class="form-group my-2">
+          <label class="text-white" for="Patient">Time</label>
+          <input oninput="validateTime()" name="" id="Time" class="form-control" placeholder="Enrer the Time">
+          <p id="invalidTime" class="text-danger d-none">Please enter a valid time</p>
+        </div>
+        <div class="form-group my-2">
+          <label class="text-white" for="Patient">Date</label>
+          <input oninput="validateDate()" name="" id="date" class="form-control" placeholder="Enrer the Date">
+          <p id="invalidDate" class="text-danger d-none">Please enter a valid date</p>
+        </div>
+        <button onclick="addPatient()" class="btn btn-outline-primary my-3">Add Patient</button>
+        <button class="btn btn-outline-light d-none" id="save" onclick="saveUpdate()">Save Changes</button>
+        <input type="text" class="form-control" placeholder="Search with Patient name"
+          oninput="searchPatient(this.value)">
+        <br>
+        
+        <div class="table-responsive ">
+          <table class="table fs-4 text-center text-white">
+            <thead>
+              <th>index</th>
+              <th>Patient Name</th>
+              <th>Doctor ID</th>
+              <th>Status</th>
+              <th>Time</th>
+              <th>Date</th>
+              <th>Patient Update</th>
+              <th>Patient Delete</th>
+            </thead>
+            <tbody id="demo">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- E N D    A P P O I N T M E N T -->
+  <!-- S T A R T     B L O G -->
+  <section class="Blog" id="Blog">
+    <div class="title">
+        <h1>Our Blog</h1>
+      </div>
+      <div class="container">
+      <div class="posts">
+        <img src="./imgs/male-doctor.jpg" alt="">
+        <P>23 November, 2015</P>
+        <h2>Dr. Omar Khaled</h2>
+        <h3>General Surgery Department</h3>
+        <p>Dr. Omar is a senior surgeon skilled in minimally
+          invasive procedures. He has performed hundreds of successful surgeries
+          and is dedicated to improving patient recovery through precise and modern surgical techniques.
+        </p>
+        <h4>READ MORE &rarr;</h4>
+      </div>
+      <div class="posts">
+        <img src="./imgs/front-view-doctor-character.jpg" alt="">
+        <p>20 April, 2018</p>
+        <h2>Dr. Latifa Mahmoud</h2>
+        <h3>Gynecology & Obstetrics</h3>
+        <p>Dr. Latifa specializes in women’s health, prenatal care, and childbirth. She provides
+          compassionate support for mothers and ensures safe and effective care for women of all ages.</p>
+        <h4>READ MORE &rarr;</h4>
+      </div>
+      <div class="posts">
+        <img src="./imgs/female_doctor_design_elements.jpg" alt="">
+        <p>17 May, 2017</p>
+        <h2>Dr. Sara El-Sayed</h2>
+        <h3>Pediatrics Department</h3>
+        <p>Dr. Sara is a pediatric specialist known for her friendly approach with
+          children. She has extensive experience in child development, and vaccinations,
+          ensuring children receive safe and comprehensive care.</p>
+        <h4>READ MORE &rarr;</h4>
+      </div>
+      <div class="clear-fix"></div>
+    </div>
+  </section>
+  <!-- E N D     B L O G -->
+  <!-- S T A R T     C O N T A C T-->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="title">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="user">
+        <input type="text" placeholder="Name" required name="user-name" class="name">
+        <input type="email" placeholder="Email" required name="user-email" class="email">
+        <div class="clear-fix"></div>
+        <input type="text" name="subject" placeholder="Subject" class="subject">
+        <textarea name="message" placeholder="Message for me" required id=""></textarea>
+        <button type="button">SEND MESSAGE</button>
+      </div>
+    </div>
+  </section>
+  <!-- E N D          C O N T A C T-->
+  <!--S T A R T       F O O T E R -->
+  <footer>
+    <div class="icons">
+      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+      <a href=""><i class="fa-brands fa-google"></i></a>
+      <a href=""><i class="fa-brands fa-github"></i></a>
+      <br><br>
+      <p>Copy Right 2025 &copy; By <a href="#">MediTech Innovators</a> All Rights Reserved</p>
+    </div>
+  </footer>
+  <!--E N D       F O O T E R -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

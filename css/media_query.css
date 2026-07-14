@@ -1,0 +1,711 @@
+/* @media screen and (max-width:600px) {
+    .home .inner .home-content img {
+        height: 79vh;
+    }
+
+
+
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        top: -100rem;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        opacity: 0;
+    }
+
+    header .navbar ul {
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+
+    header .navbar ul li {
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .navbar ul li a {
+        font-size: 2rem;
+        display: block;
+    }
+
+    header .nav-toggle {
+        top: 5.5rem;
+        opacity: 1;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .home .inner {
+        width: 100%;
+    }
+
+    .home-content {
+        border: 0;
+        float: left;
+        padding: 20px 0;
+    }
+
+    .home .content {
+        width: 100%;
+    }
+
+    .about-content table td {
+        width: 100%;
+    }
+
+    .services .types {
+        width: 100%;
+    }
+
+    .portfolio-text {
+        width: 100%;
+    }
+
+    .portfolio-images .group1,
+    .portfolio-images .group2 {
+        width: 100%;
+    }
+
+    .information {
+        height: 650px;
+        padding: 20px 0;
+    }
+
+    .members {
+        width: 100%;
+    }
+
+    .feedback {
+        width: 100%;
+        height: 450px;
+    }
+
+    .feedback .client-img {
+        top: 0px;
+        left: 0px;
+    }
+
+    .Blog .posts {
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .email {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:601px) {
+    .home .inner .home-content img {
+        height: 80vh;
+    }
+
+    .home .home-content {
+        border: 0;
+        float: left;
+        padding: 20px 0;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home .content {
+        width: 100%;
+    }
+
+    .services .types {
+        width: 100%;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-content td {
+        width: 100%;
+    }
+
+    .portfolio-text {
+        width: 100%;
+    }
+
+    .portfolio-images .group1,
+    .portfolio-images .group2 {
+        width: 100%;
+    }
+
+    .information {
+        height: 550px;
+        padding: 50px 0;
+    }
+
+    .members {
+        width: 100%;
+    }
+
+    .feedback {
+        width: 100%;
+        height: 300px;
+    }
+
+    .feedback .client-img {
+        top: 10px;
+        left: 10px;
+    }
+
+    .Blog .posts {
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .email {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .home .inner .home-content img {
+        height: 79vh;
+    }
+
+    .home .home-content {
+        border: 0;
+        float: left;
+        padding: 20px 0;
+    }
+
+    .home .inner {
+        width: 85%;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home .content {
+        width: 100%;
+    }
+
+
+    .about-content td {
+        width: 50%;
+    }
+
+    .services .types {
+        width: 50%;
+    }
+
+    .portfolio-text {
+        width: 80%;
+    }
+
+    .portfolio-images .group1,
+    .portfolio-images .group2 {
+        width: 45%;
+    }
+
+    .information {
+        height: 350px;
+        padding: 70px 0;
+    }
+
+    .members {
+        width: 25%;
+    }
+
+    .feedback {
+        width: 600px;
+        height: 300px;
+    }
+
+    .feedback .client-img {
+        top: 20px;
+        left: 20px;
+    }
+
+    .Blog .posts {
+        width: 25%;
+    }
+
+    .contact {
+        width: 85%;
+    }
+
+    .name {
+        width: 46%;
+    }
+
+    .email {
+        width: 46%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .home .inner .home-content img {
+        height: 79vh;
+    }
+
+
+
+    .about .parent {
+        border: solid 8px black;
+        border-radius: 8px;
+        float: left;
+        padding: 20px 0;
+    }
+
+    .about .parent {
+        width: 35%;
+    }
+
+    .about-content {
+        width: 55%;
+    }
+
+    .about-content td {
+        width: 50%;
+    }
+
+    .services .types {
+        width: 25%;
+    }
+
+    .portfolio-text {
+        width: 70%;
+    }
+
+    .portfolio-images .group1,
+    .portfolio-images .group2 {
+        width: 30%;
+    }
+
+    .information {
+        height: 300px;
+        padding: 90px 0;
+    }
+
+    .members {
+        width: 25%;
+    }
+
+    .feedback {
+        width: 700px;
+        height: 250px;
+    }
+
+    .feedback .client-img {
+        top: 30px;
+        left: 20px;
+    }
+
+    .Blog .posts {
+        width: 30%;
+    }
+
+    .contact {
+        width: 70%;
+    }
+
+    .name {
+        width: 46%;
+    }
+
+    .email {
+        width: 46%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .home .inner .home-content img {
+        height: 79vh;
+    }
+
+
+    .about .parent {
+        border: solid 8px black;
+        border-radius: 8px;
+        float: left;
+        padding: 20px 0;
+    }
+
+    .about .parent {
+        width: 35%;
+    }
+
+    .about-content {
+        width: 55%;
+    }
+
+    .about-content td {
+        width: 50%;
+    }
+
+    .services .types {
+        width: 25%;
+    }
+
+    .portfolio-text {
+        width: 70%;
+    }
+
+    .portfolio-images .group1,
+    .portfolio-images .group2 {
+        width: 30%;
+    }
+
+    .information {
+        height: 300px;
+        padding: 90px 0;
+    }
+
+    .members {
+        width: 25%;
+    }
+
+    .feedback {
+        width: 700px;
+        height: 250px;
+    }
+
+    .feedback .client-img {
+        top: 40px;
+        left: 30px;
+    }
+
+    .Blog .posts {
+        width: 30%;
+    }
+
+    .contact {
+        width: 65%;
+    }
+
+    .name {
+        width: 46%;
+    }
+
+    .email {
+        width: 46%;
+    }
+} */
+/* =========================
+   Mobile (0px - 576px)
+========================= */
+@media (max-width:576px){
+
+    html{
+        font-size:55%;
+    }
+
+    /* Header */
+    header{
+        padding:1.5rem;
+    }
+
+    header .fa-bars{
+        display:block;
+    }
+
+    header .navbar{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#fff;
+        display:none;
+        box-shadow:0 5px 10px rgba(0,0,0,.15);
+    }
+
+    header .navbar.nav-toggle{
+        display:block;
+    }
+
+    header .navbar ul{
+        flex-direction:column;
+        padding:1rem 0;
+    }
+
+    header .navbar ul li{
+        margin:1rem 0;
+    }
+
+    /* Home */
+
+    .home{
+        min-height:auto;
+        padding:10rem 0 4rem;
+    }
+
+    .home .inner{
+        width:95%;
+        margin:auto;
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        gap:2rem;
+    }
+
+    .home-content{
+        width:100%;
+    }
+
+    .home-content img{
+        width:100%;
+        max-width:320px;
+        height:auto;
+        margin:auto;
+        display:block;
+    }
+
+    .content{
+        width:100%;
+    }
+
+    .content h1{
+        font-size:2.8rem;
+    }
+
+    .content p{
+        font-size:1.6rem;
+    }
+
+    /* Appointment */
+
+    .Appointment .container{
+        padding:20px 10px;
+    }
+
+    .table-responsive{
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:700px;
+    }
+
+    /* Blog */
+
+    .Blog .posts{
+        width:100%;
+        margin:20px 0;
+    }
+
+    /* Contact */
+
+    .contact{
+        width:95%;
+    }
+
+    .name,
+    .email,
+    .subject,
+    textarea,
+    .user button{
+        width:100%;
+    }
+}
+
+/* ==========================
+   Tablets (577px-768px)
+========================== */
+@media (min-width:577px) and (max-width:768px){
+
+    html{
+        font-size:60%;
+    }
+
+    .home{
+        min-height:auto;
+        padding:10rem 0;
+    }
+
+    .home .inner{
+        width:90%;
+        margin:auto;
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        gap:3rem;
+    }
+
+    .home-content img{
+        width:70%;
+        max-width:420px;
+        height:auto;
+    }
+
+    .content{
+        width:100%;
+    }
+
+    .Blog .posts{
+        width:47%;
+        margin:1.5%;
+        float:left;
+    }
+
+    .contact{
+        width:90%;
+    }
+
+    .name,
+    .email{
+        width:100%;
+    }
+}
+
+/* ==========================
+   Small Laptops (769px-991px)
+========================== */
+@media (min-width:769px) and (max-width:991px){
+
+    html{
+        font-size:62.5%;
+    }
+
+    .home{
+        min-height:100vh;
+    }
+
+    .home .inner{
+        width:90%;
+        margin:auto;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:30px;
+    }
+
+    .home-content{
+        width:45%;
+    }
+
+    .home-content img{
+        width:100%;
+        height:auto;
+    }
+
+    .content{
+        width:50%;
+    }
+
+    .content h1{
+        font-size:3.2rem;
+    }
+
+    .Blog .posts{
+        width:46%;
+        margin:2%;
+        float:left;
+    }
+
+    .contact{
+        width:85%;
+    }
+
+    .name,
+    .email{
+        width:48%;
+    }
+}
+
+/* ==========================
+   Desktop (992px-1199px)
+========================== */
+@media (min-width:992px) and (max-width:1199px){
+
+    .home .inner{
+        width:90%;
+        gap:40px;
+    }
+
+    .home-content{
+        width:45%;
+    }
+
+    .home-content img{
+        width:100%;
+        max-width:500px;
+        height:auto;
+    }
+
+    .content{
+        width:45%;
+    }
+
+    .Blog .posts{
+        width:30%;
+        margin:1.5%;
+    }
+
+    .contact{
+        width:75%;
+    }
+
+    .name,
+    .email{
+        width:48%;
+    }
+}
+
+/* ==========================
+   Large Screens (1200px+)
+========================== */
+@media (min-width:1200px){
+
+    .home .inner{
+        width:85%;
+        gap:60px;
+    }
+
+    .home-content{
+        width:45%;
+    }
+
+    .home-content img{
+        width:100%;
+        max-width:550px;
+        height:auto;
+    }
+
+    .content{
+        width:45%;
+    }
+
+    .Blog .posts{
+        width:30%;
+        margin:1.5%;
+    }
+
+    .contact{
+        width:70%;
+    }
+
+    .name,
+    .email{
+        width:48%;
+    }
+}
